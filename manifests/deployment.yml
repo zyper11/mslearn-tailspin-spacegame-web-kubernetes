@@ -1,4 +1,4 @@
-apiVersion : apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: web
@@ -14,11 +14,11 @@ spec:
     spec:
       containers:
         - name: web
-          image: tailspinspacegameprod.azurecr.io/web
+          image: acrtailspin.azurecr.io/web
           ports:
-          - containerPort: 80
+            - containerPort: 80
 ---
-apiVersion : apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: leaderboard
@@ -34,6 +34,6 @@ spec:
     spec:
       containers:
         - name: leaderboard
-          image: tailspinspacegameprod.azurecr.io/leaderboard
+          image: acrtailspin.azurecr.io/leaderboard
           ports:
-          - containerPort: 80
+            - containerPort: 80
